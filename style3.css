@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS VARIABLE */
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+
+/*Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 58px;
+  margin: 4px 6px;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: 'Times New Roman', cursive;
+}
+
+#navbar::before {
+  content: " ";
+  background-color: rgb(113, 9, 209);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .4;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+#navbar ul li a {
+  color: rgb(92, 31, 198);
+  display: block;
+  padding: 5px 20px;
+  border-radius: 60px;
+  text-decoration: none;
+  position: relative; left:700px;
+}
+
+#navbar ul li a:hover {
+  color: rgb(4, 0, 0);
+  background-color: rgb(166, 99, 211);
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .h-primary p {
+  animation: fadeIn 5s;
+  font-size: 60px;
+  border: 5px solid rgb(174, 9, 219);
+  border-radius: 20px;
+  width: 90%;
+  padding:-40px 30px;
+  position: relative; top: -10px; left: 5%;
+  font-family: 'Times new roman', serif;
+  color: transparent;
+  -webkit-text-stroke: 1px #6207eb;
+  background-image: url(https://cdn.wallpapersafari.com/19/62/7FOY6g.gif);
+  -webkit-background-clip: text;
+
+}
+
+#main p {
+  color: rgb(82, 22, 146);
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative; top: 20px;
+  font-family: 'Times New Roman', serif;
+}
+
+/* Services Section */
+#services {
+  margin: 34px;
+  display: flex;
+}
+
+#services .box {
+  border: 3px solid rgb(174, 9, 219);
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background-color: rgb(255, 255, 255);
+  transition: background 0.5s, transform 0.5s;
+}
+
+#services .box:hover {
+  background: rgba(169, 104, 234, 0.677);
+  transform: translateY(-40px);
+
+}
+
+#services .box img {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box
+}
+
+/* style the container */
+.container {
+  border: 3px solid rgb(174, 9, 219);
+  position: relative;left: 120px;
+  width: 80%;
+  border-radius: 30px;
+  background-color: #fefefe;
+  padding: 20px 0 20px 0;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #112c66;
+  color: white;
+}
+
+.twitter {
+  background-color: #4aacee;
+  color: white;
+}
+
+.google {
+  background-color: #d50b0b;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #7e44e3;
+  position: relative; top: 50px; left:415px;
+  border-radius: 10px;
+  width: 40%;
+  padding: 2px 10px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: rgb(148, 28, 234);
+  position: relative; top: 100px;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary {
+  font-family: 'Bree Serif', serif;
+
+  font-size: 2.8rem;
+  padding: 12px;
+
+}
+
+.h-secondary {
+  font-family: 'Bree Serif', serif;
+
+  font-size: 1.8rem;
+  padding: 12px;
+
+}
+
+button {
+  padding: 10px 30px;
+  position:relative; top:180px;
+  border: 5px solid rgba(255, 255, 255, 0);
+  background-color: rgb(129, 60, 174);
+  color: white;
+  margin: 17px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#home::before {
+  content: " ";
+  .back-video{
+       position: absolute;
+        right: 0;
+         bottom: 0;
+        z-index: -1;}
+}
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width:auto;
+    height: 100%;
+  }
+}
