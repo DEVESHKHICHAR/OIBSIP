@@ -1,2 +1,2 @@
 # OIBSIP
-Oasis Internship task  submissions
+Oasis Internship task 1 submissions
