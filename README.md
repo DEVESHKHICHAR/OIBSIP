@@ -1,2 +1,2 @@
 # OIBSIP
-Oasis Internship task submission
+Oasis Web Development and Design Internship task submission
